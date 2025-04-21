@@ -1,7 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import firebaseApp from './firebase';
+import { useEffect } from 'react';
+
 
 function App() {
+  useEffect(() => {
+    console.log("✅ Firebase app initialized:", firebaseApp);
+  }, []);
+  
   return (
     <div className="App">
       <header className="App-header">
